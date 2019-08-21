@@ -6,19 +6,24 @@ from os.path import expanduser
 
 home = expanduser('~')
 
+should_check = False
+
 if os.path.exists(home + '/.bash_profile'):
-    print('.bash_profile already exists')
-    print('moving the current .bash_profile to .bash_profile_backup')
-    print('you may want to update your dotfiles')
-    os.system('mv %s/.bash_profile %s/.bash_profile_backup' % (home, home))
+    print 'File .bash_profile already exists!'
+    print 'Moving the current .bash_profile to .bash_profile_backup'
+    os.system('mv ~/.bash_profile ~/.bash_profile_backup')
+    should_check = True
 
 os.system('echo source $HOME/dotfiles/bash/bash_profile.sh > ~/.bash_profile')
 
 if os.path.exists(home + '/.vimrc'):
-    print('.vimrc already exists')
-    print('moving the current .vimrc to .vimrc_backup')
-    print('you may want to update your dotfiles')
-    os.system('mv %s/.vimrc %s/.vimrc_backup' % (home, home))
+    print 'File .vimrc already exists!'
+    print 'Moving the current .vimrc to .vimrc_backup'
+    os.system('mv ~/.vimrc ~/.vimrc_backup')
+    should_check = True
+
+if should_check:
+    print '>> You may want to update your dotfiles <<'
 
 os.system('echo source $HOME/dotfiles/vim/vimrc > ~/.vimrc')
-print('done!')
+print 'Done!'
