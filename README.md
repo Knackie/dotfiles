@@ -10,4 +10,4 @@
 git clone https://github.com/pwschneider/dotfiles.git ~/ && ~/dotfiles/./install
 ```
 #### Feedback is welcome!
-email: pedroschneider@outlook.com
+Contact me: pedroschneider@outlook.com
