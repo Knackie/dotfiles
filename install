@@ -1,28 +1,27 @@
 #!/usr/bin/python
 
-import os
-
-from os.path import expanduser
+from os import system
+from os.path import expanduser, exists
 
 home = expanduser('~')
 
 warning = False
 
 def check(filename):
-    if os.path.exists(home + '/' +filename):
+    if exists(home + '/' +filename):
         print 'File %s already exists!' % filename
         print 'Moving the current %s to %s_backup' % (filename, filename)
-        os.system('mv ~/%s ~/%s_backup' % (filename, filename))
+        system('mv ~/%s ~/%s_backup' % (filename, filename))
         warning = True
 
 check('.bash_profile')
-os.system('echo source $HOME/dotfiles/bash/bash_profile.sh > ~/.bash_profile')
+system('echo source $HOME/dotfiles/bash/bash_profile.sh > ~/.bash_profile')
 
 check('.vimrc')
-os.system('echo source $HOME/dotfiles/vim/vimrc > ~/.vimrc')
+system('echo source $HOME/dotfiles/vim/vimrc > ~/.vimrc')
 
 check('.tmux.conf')
-os.system('echo source $HOME/dotfiles/.tmux.conf > ~/.tmux.conf')
+system('echo source $HOME/dotfiles/.tmux.conf > ~/.tmux.conf')
 
 if warning:
     print '>> You may want to update your dotfiles <<'
