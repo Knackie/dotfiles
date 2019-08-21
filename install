@@ -6,30 +6,25 @@ from os.path import expanduser
 
 home = expanduser('~')
 
-should_check = False
+warning = False
 
-if os.path.exists(home + '/.bash_profile'):
-    print 'File .bash_profile already exists!'
-    print 'Moving the current .bash_profile to .bash_profile_backup'
-    os.system('mv ~/.bash_profile ~/.bash_profile_backup')
-    should_check = True
+def check(filename):
+    if os.path.exists(home + '/' +filename):
+        print 'File %s already exists!' % filename
+        print 'Moving the current %s to %s_backup' % (filename, filename)
+        os.system('mv ~/%s ~/%s_backup' % (filename, filename))
+        warning = True
+
+check('.bash_profile')
 os.system('echo source $HOME/dotfiles/bash/bash_profile.sh > ~/.bash_profile')
 
-if os.path.exists(home + '/.vimrc'):
-    print 'File .vimrc already exists!'
-    print 'Moving the current .vimrc to .vimrc_backup'
-    os.system('mv ~/.vimrc ~/.vimrc_backup')
-    should_check = True
+check('.vimrc')
 os.system('echo source $HOME/dotfiles/vim/vimrc > ~/.vimrc')
 
-if os.path.exists(home + '/.tmux.conf'):
-    print 'File .tmux.conf already exists!'
-    print 'Moving the current .tmux.conf to .tmux.conf_backup'
-    os.system('mv ~/.tmux.conf ~/.tmux.conf_backup')
-    should_check = True
+check('.tmux.conf')
 os.system('echo source $HOME/dotfiles/.tmux.conf > ~/.tmux.conf')
 
-if should_check:
+if warning:
     print '>> You may want to update your dotfiles <<'
 
 print 'Done!'
