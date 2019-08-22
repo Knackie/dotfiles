@@ -2,6 +2,8 @@ syntax on
 
 set nu
 
+highlight Comment ctermfg=green
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
