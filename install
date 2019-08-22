@@ -8,7 +8,7 @@ home = expanduser('~')
 warning = False
 
 def check(filename):
-    if exists(home + '/' +filename):
+    if exists(home + '/' + filename):
         print 'File %s already exists!' % filename
         print 'Moving the current %s to %s_backup' % (filename, filename)
         system('mv ~/%s ~/%s_backup' % (filename, filename))
