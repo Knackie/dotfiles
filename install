@@ -26,4 +26,7 @@ system('echo source $HOME/dotfiles/.tmux.conf > ~/.tmux.conf')
 if warning:
     print '>> You may want to update your dotfiles <<'
 
+system('echo -e "[user]\n  name = William\n  email = pedroschneider@outlook.com" >> .gitconfig')
+
+
 print 'Done!'
