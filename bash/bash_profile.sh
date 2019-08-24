@@ -7,3 +7,6 @@ source $HOME/dotfiles/bash/aliases.sh
 
 # Path
 source $HOME/dotfiles/bash/path.sh
+
+# Go
+source $HOME/dotfiles/bash/go.sh
