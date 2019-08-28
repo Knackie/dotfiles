@@ -33,3 +33,6 @@ $ sudo make install
 ```
 $ sudo ln -s /opt/bin/tmux /usr/bin/tmux
 ```
+
+* Inspired by:
+https://gist.github.com/shrayasr/8714601
