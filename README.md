@@ -7,7 +7,7 @@
 
 ### Install:
 ```
-git clone https://github.com/pwschneider/dotfiles.git ~/ && ~/dotfiles/./install
+git clone https://github.com/pwschneider/dotfiles.git ~/dotfiles && ~/dotfiles/./install
 ```
 #### Feedback is welcome!
 Contact me: pedroschneider@outlook.com
