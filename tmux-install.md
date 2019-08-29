@@ -1,6 +1,6 @@
 # tmux 2.8 installation guide:
 
-1. create a directory to build everything
+1. Create a directory to build tmux (optional)
 
 ```
 $ mkdir ~/tmux-install && cd ~/tmux-install
