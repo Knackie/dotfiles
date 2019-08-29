@@ -3,7 +3,7 @@
 1. create a directory to build everything
 
 ```
-mkdir ~/tmux-install && cd ~/tmux-install
+$ mkdir ~/tmux-install && cd ~/tmux-install
 ```
 
 2. Download both tmux and libevent from the links:
