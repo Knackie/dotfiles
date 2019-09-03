@@ -10,3 +10,7 @@ source $HOME/dotfiles/bash/path.sh
 
 # Go
 source $HOME/dotfiles/bash/go.sh
+
+# Node (brew install node)
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
