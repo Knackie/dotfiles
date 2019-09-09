@@ -1,4 +1,5 @@
 source $HOME/dotfiles/vim/configs/themes.vim
+source $HOME/dotfiles/vim/configs/plugs.vim
 source $HOME/dotfiles/vim/configs/general.vim
 source $HOME/dotfiles/vim/configs/mappings.vim
 source $HOME/dotfiles/vim/skeletons/skeletons.vim

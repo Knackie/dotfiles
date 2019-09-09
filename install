@@ -17,6 +17,7 @@ def check(filename):
 check('.bash_profile')
 system('echo source $HOME/dotfiles/bash/bash_profile.sh > ~/.bash_profile')
 
+# TODO: make a vim-plug install
 check('.vimrc')
 system('echo source $HOME/dotfiles/vim/vimrc > ~/.vimrc')
 
