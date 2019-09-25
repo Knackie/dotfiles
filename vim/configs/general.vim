@@ -18,11 +18,19 @@ set autoindent
 
 " Cause searching is about making stuff shinny
 set hlsearch
+set ignorecase
 
 " Multiple files editting
 set hidden
-set nocompatible
 set noswapfile
+
+" Vi compatibility
+set nocompatible
 
 " Navigation can be ergonomic too
 set scrolloff=10
+
+" Just to be clear
+set encoding=utf-8
+
+" vim: ft=vim
