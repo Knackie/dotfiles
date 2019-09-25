@@ -12,3 +12,6 @@ Sessionx.vim
 
 # Temporary
 .netrwhist
+
+# Vim Plugins
+vim/configs/plugs.vim
