@@ -1,6 +1,7 @@
 augroup skeleton_per_filetype
     autocmd!
-    autocmd BufNewFile *.tex  0r $HOME/dotfiles/vim/skeletons/tex.vim
-    autocmd BufNewFile *.hdl  0r $HOME/dotfiles/vim/skeletons/hdl.vim
-    autocmd BufNewFile *.cpp  0r $HOME/dotfiles/vim/skeletons/cpp.vim
+    autocmd BufNewFile *.tex  0r $HOME/dotfiles/vim/skeletons/tex.tex
+    autocmd BufNewFile *.hdl  0r $HOME/dotfiles/vim/skeletons/hdl.vhd
+    autocmd BufNewFile *.cpp  0r $HOME/dotfiles/vim/skeletons/cpp.cpp
+    autocmd BufNewFile *.py  0r $HOME/dotfiles/vim/skeletons/python.py
 augroup END
