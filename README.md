@@ -4,6 +4,7 @@
 * tmux (2.8)
 * bash
 * vim
+* neovim
 
 > If you want to install tmux 2.8 (without homebrew), please check tmux-install.md
 
