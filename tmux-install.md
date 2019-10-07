@@ -31,7 +31,7 @@ $ sudo make install
 
 6. Link it
 ```
-$ sudo ln -s /opt/bin/tmux /usr/bin/tmux
+$ sudo ln -s /opt/bin/tmux /usr/local/bin/tmux
 ```
 
 * Inspired by:
